@@ -1,5 +1,17 @@
+#include <boost/asio/ip/tcp.hpp>
+#include <boost/asio/ssl.hpp>
+#include <boost/beast/core.hpp>
+#include <boost/beast/ssl.hpp>
+#include <boost/beast/websocket.hpp>
+#include <boost/beast/websocket/ssl.hpp>
 #include <iostream>
 #include <cstdlib>
+
+namespace net = boost::asio;
+namespace ssl = boost::asio::ssl;
+namespace beast = boost::beast;
+namespace websocket = boost::beast::websocket;
+using tcp = boost::asio::ip::tcp;
 
 int main()
 {
